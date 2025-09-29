@@ -9,3 +9,10 @@ print(type(z2))
 
 
 #casting int(), str(), float()
+
+# assign a value to variable in single line
+x = y = 2
+
+x = y = z = "helloworld"
+
+print(x)
