@@ -10,3 +10,6 @@ print(a[2:]) #asanth
 print(a[-3:-1]) #nt
 
 print(a)
+
+#prasanth
+#01234567
