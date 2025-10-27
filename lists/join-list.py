@@ -3,9 +3,11 @@ b = [4,5,6]
 
 print(a+b)
 
-for i in a:
-  b.append(i)
+# for i in a:
+#   b.append(i)
 
-print(b)
+# print(b)
 
-print(a.extend(b))
+a.extend(b)
+
+print(a)
