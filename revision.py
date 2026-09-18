@@ -140,3 +140,31 @@ pr_methods_set.update([1,2,7,8,9]) # adding a list of items using list
 
 
 print(pr_methods_set)
+
+
+# dict store the value as key value pairs 
+
+# in the py 3.5 and earlies dict are unordered after the 3.6 its ordered
+
+dictA = {
+  "name" : "Prasanth",
+  "rollNo" : 80
+}
+
+print(dictA['name'])
+
+# using del dict[key] delete the key, if key not exists it will crashes
+
+# .pop(key) - removes the key and returns the value
+
+
+
+
+
+
+
+
+
+
+
+

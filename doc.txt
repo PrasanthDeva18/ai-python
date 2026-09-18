@@ -12,3 +12,13 @@ example
 for list 
 
 
+| Collection     | Syntax     | Ordered? | Mutable? | Unique Items Only? | Key Feature                                            |
+| -------------- | ---------- | -------- | -------- | ------------------ | ------------------------------------------------------ |
+| **List**       | `[1, 2]`   | ✅ Yes    | ✅ Yes    | ❌ No               | General-purpose sequential data                        |
+| **Tuple**      | `(1, 2)`   | ✅ Yes    | ❌ No     | ❌ No               | Read-only / fixed data structure                       |
+| **Set**        | `{1, 2}`   | ❌ No     | ✅ Yes    | ✅ Yes              | Unique items, fast membership testing & set operations |
+| **Dictionary** | `{"a": 1}` | ✅ Yes*   | ✅ Yes    | ✅ Keys only        | Key-value mapping, fast lookup by key                  |
+
+
+
+* Dictionary order: Python 3.7+ officially guarantees insertion order.
