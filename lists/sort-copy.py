@@ -12,3 +12,6 @@ d=a[:]
 # print(b)
 # print(c)
 print(d)
+
+
+

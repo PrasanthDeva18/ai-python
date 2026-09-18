@@ -2,3 +2,13 @@ List is the collection - ordered and changeable, allow duplicate members
 Tuple is the collection - ordered and unchangeable, allow duplicate members
 Set is the collection - unordered, unchangeable, unindexed, not allow duplicates
 Dict is the collection - ordered and changeable, not allow duplicates
+
+list and tuple is a heterogeneous 
+
+example 
+
+[1,2,3,4]
+
+for list 
+
+
