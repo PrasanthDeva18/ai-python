@@ -157,9 +157,15 @@ print(dictA['name'])
 
 # .pop(key) - removes the key and returns the value
 
+# pip install packagename
+
+# import packagename 
+# import packagename as name - as used for alias
+# extract particular tool from the package. from tool import packagename
 
 
 
+# __init__.py tell this file as package 
 
 
 

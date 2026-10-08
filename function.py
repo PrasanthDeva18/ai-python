@@ -48,4 +48,7 @@ fn5(name="prasanth", rollno="80")
 
 # **kwargs this is used for dictionary
 
+import slicing
+
+slicing.hello()
 

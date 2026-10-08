@@ -13,3 +13,8 @@ print(a)
 
 #prasanth
 #01234567
+
+
+def hello():
+    print("hello world")
+
