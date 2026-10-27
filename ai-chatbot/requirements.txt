@@ -1,0 +1,23 @@
+# --- Web framework ---
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings      # for core/config.py (reads .env cleanly)
+python-dotenv
+
+# --- Database ---
+sqlalchemy
+alembic
+
+# --- Local LLM (Hugging Face) ---
+huggingface-hub        # downloads models from Hugging Face
+llama-cpp-python       # runs quantized GGUF models on CPU/GPU
+
+# --- Cloud LLM (add later, when you build those providers) ---
+# openai
+# anthropic
+
+# --- Testing ---
+pytest
+pytest-asyncio
+httpx

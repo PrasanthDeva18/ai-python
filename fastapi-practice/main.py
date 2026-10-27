@@ -13,7 +13,7 @@ import schemas
 
 from database import engine, SessionLocal
 
-models.Base.metadata.create_all(bind=engine) #creates the table if they dont exist
+# models.Base.metadata.create_all(bind=engine) #creates the table if they dont exist
 # This runs once, at startup. It looks at every class that inherited from Base (your Item model) and creates the matching table in items.db if it doesn't already exist. If the table's already there from a previous run, this line does nothing — it's safe to run every time you start the app.
 
 app = FastAPI()
@@ -55,6 +55,7 @@ def create_item(item: schemas.ItemCreate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(db_item)
     return db_item
+
 # For list of items return define response model as list
 @app.get("/get-all", response_model=List[schemas.ItemResponse])
 def get_all_item(skip : int = 0, limit: int = 10, db: Session = Depends(get_db)):
@@ -64,7 +65,15 @@ def get_all_item(skip : int = 0, limit: int = 10, db: Session = Depends(get_db))
 def get_item(item_id: int,db: Session = Depends(get_db)):
     return db.query(models.Item).filter(models.Item.id ==item_id).first()
 
+@app.post("/create-student/", response_model=schemas.StudentResponse)
+def create_item(student: schemas.CreateStudent, db: Session = Depends(get_db)):
+    db_item = models.Student(**student.model_dump())
+    db.add(db_item)
+    db.commit()
+    db.refresh(db_item)
+    return db_item
 
 @app.get("/")
 def read_root():
     return {"message": "Hello FastAPI Prasanth"}
+
